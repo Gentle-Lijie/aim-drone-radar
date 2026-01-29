@@ -60,3 +60,7 @@ temp/
 *.tmp
 *.bak
 nul
+
+# Results
+inference_results/**/*.jpg
+inference_results/**/*.png

@@ -66,9 +66,65 @@ if torch.cuda.is_available():
 
 ```
 aim-radar/
-├── requirements.txt    # 项目依赖
-├── CUDA_Setup.md       # CUDA 配置指南
-└── README.md           # 项目说明
+├── models/
+│   ├── DroneDetection/best.pt  # 泛化能力最强
+│   ├── model3.pt               # 通用模型
+│   └── AntiUAV/                # 蜂群检测专用
+├── scripts/
+│   ├── train_yolov5.py         # YOLOv5 训练
+│   ├── finetune.py             # 模型微调
+│   ├── detect_video.py         # 视频/摄像头检测
+│   ├── benchmark_models.py     # 模型评估
+│   ├── batch_inference.py      # 批量推理
+│   ├── batch_inference_resume.py # 批量推理(断点续传)
+│   └── organize_results.py     # 结果整理
+├── yolov5/                     # YOLOv5 框架
+├── runs/                       # 训练输出
+├── inference_results/          # 推理结果
+├── CLAUDE.md                   # Claude Code 配置
+├── CUDA_Setup.md               # CUDA 配置指南
+├── dataset.md                  # 数据集格式说明
+├── DEPLOY.md                   # 部署指南
+└── progress.md                 # 进度跟踪
+```
+
+## 常用命令
+
+### 训练模型
+```bash
+python scripts/train_yolov5.py --data models/AntiUAV/data.yaml --epochs 100 --weights yolov5s.pt
+```
+
+### 视频检测
+```bash
+python scripts/detect_video.py --weights models/DroneDetection/best.pt --source 0  # 摄像头
+python scripts/detect_video.py --weights models/DroneDetection/best.pt --source video.mp4
+```
+
+### 批量推理
+```bash
+# 对文件夹下所有图片进行推理
+python scripts/batch_inference.py
+
+# 断点续传
+python scripts/batch_inference_resume.py --output inference_results/run_XXXXXXXX_XXXXXX
+```
+
+### 整理推理结果
+```bash
+# 按检测结果分类 + 重命名(添加置信度前缀)
+python scripts/organize_results.py --input inference_results/run_XXXXXXXX_XXXXXX
+
+# 只分类移动
+python scripts/organize_results.py --input inference_results/run_XXXXXXXX_XXXXXX --move-only
+
+# 只重命名
+python scripts/organize_results.py --input inference_results/run_XXXXXXXX_XXXXXX --rename-only
+```
+
+### 模型评估
+```bash
+python scripts/benchmark_models.py
 ```
 
 ## CUDA 配置

@@ -23,6 +23,10 @@
 - [x] 创建 detect_video.py (视频/摄像头检测)
 - [x] 编写 dataset.md (数据集格式说明)
 - [x] 编写 DEPLOY.md (部署指南)
+- [x] 创建 batch_inference.py (批量推理脚本)
+- [x] 创建 batch_inference_resume.py (断点续传版)
+- [x] 创建 organize_results.py (结果整理脚本)
+- [x] 大疆 RoboMaster 数据集批量推理 (6887 张 × 3 模型 = 20661 条)
 
 ## 进行中
 - 无
@@ -74,3 +78,14 @@
   - Precision: 1.0
   - Recall: 0.983
 - 输出: `runs/yolov5/antiuav/weights/best.pt`
+
+### 大疆 RoboMaster 数据集批量推理
+- 完成时间: 2026-01-29
+- 数据来源: 4 个赛区比赛视频截图
+  - 华中赛区: 2655 张
+  - 总决赛: 2685 张
+  - 华北赛区: 387 张
+  - 华南赛区: 1160 张
+- 总计: 6887 张 × 3 模型 = 20661 条记录
+- 检测率: 45.19% (9336/20661)
+- 输出: `inference_results/run_20260129_195603/`
