@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['drone']
+
+roboflow:
+  workspace: drone-detection-ehdcs
+  project: drone-dataset-by-ayushkumawat
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/drone-detection-ehdcs/drone-dataset-by-ayushkumawat/dataset/3

@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "*",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(dir:*)",
+      "Bash(pip install:*)",
+      "Bash(\"D:/DEV/VLM/.venv/Scripts/python.exe\":*)",
+      "Bash(\"D:/DEV/VLM/.venv/Scripts/python.exe\" -c \"from ultralytics import YOLO; print\\(''ultralytics OK''\\)\")",
+      "Bash(\"D:/DEV/VLM/.venv/Scripts/pip.exe\" show torch)",
+      "Bash(\"D:/DEV/VLM/.venv/Scripts/python.exe\" -m pip show torch)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/pip.exe\" install --upgrade pip)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip install --upgrade pip -q)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip install:*)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\":*)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip install ultralytics -q)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -c:*)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip install --force-reinstall torchvision --index-url https://download.pytorch.org/whl/nightly/cu128 -q)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip install yolov5)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip uninstall:*)",
+      "Bash(git clone:*)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" scripts/train.py --epochs 30 --batch 8)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" -m pip install pyyaml pillow)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" scripts/benchmark.py)",
+      "Bash(\"D:/dev/aim-radar/.venv/Scripts/python.exe\" scripts/train.py:*)",
+      "Bash",
+      "WebSearch"
+    ]
+  }
+}

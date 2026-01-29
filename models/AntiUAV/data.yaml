@@ -1,0 +1,6 @@
+path: D:/dev/aim-radar/models/AntiUAV
+train: train/images
+val: valid/images
+
+nc: 1
+names: ['uav']
