@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "Bash(powershell -File -:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"D:\\\\DEV\\\\aim-radar\\\\inference_results\\\\run_20260129_195603\\\\_copy_bad.ps1\")",
+      "Bash(del \"D:\\\\DEV\\\\aim-radar\\\\inference_results\\\\run_20260129_195603\\\\_copy_bad.ps1\")",
+      "Bash(cmd /c del \"D:\\\\DEV\\\\aim-radar\\\\inference_results\\\\run_20260129_195603\\\\_copy_bad.ps1\")",
+      "Bash(done)",
+      "Bash(powershell -ExecutionPolicy Bypass -File:*)",
+      "Bash(cmd /c del \"D:\\\\DEV\\\\aim-radar\\\\inference_results\\\\run_20260129_195603\\\\_copy_origin.ps1\")"
+    ]
+  }
+}

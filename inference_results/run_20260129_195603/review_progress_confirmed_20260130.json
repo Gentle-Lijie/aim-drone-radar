@@ -1,0 +1,23 @@
+{
+  "reviewed": {
+    "robomaster_North China Regional Competition\\DroneDetection\\Confirmed\\0.92_TDTVsI Hiter_BO5_3_173.jpg": "yes",
+    "robomaster_North China Regional Competition\\DroneDetection\\Confirmed\\0.92_TDTVsI Hiter_BO5_3_171.jpg": "yes",
+    "robomaster_North China Regional Competition\\DroneDetection\\Confirmed\\0.92_TDTVsI Hiter_BO5_3_170.jpg": "yes",
+    "robomaster_South China Regional Competition\\DroneDetection\\Confirmed\\0.91_Hello WorldVs逸仙狮_BO3_2_88.jpg": "yes",
+    "robomaster_South China Regional Competition\\DroneDetection\\Confirmed\\0.91_EvolutionVs华南虎_BO3_2_342.jpg": "yes",
+    "robomaster_Central China Regional Competition\\DroneDetection\\Confirmed\\0.91_AllianceVsArtisans_BO2_2_415.jpg": "yes",
+    "robomaster_South China Regional Competition\\DroneDetection\\Confirmed\\0.89_高巨毅恒Vs华南虎_BO5_2_248.jpg": "yes",
+    "robomaster_South China Regional Competition\\DroneDetection\\Confirmed\\0.88_高巨毅恒VsRobotPilots_BO3_2_134.jpg": "bad",
+    "robomaster_Central China Regional Competition\\DroneDetection\\Confirmed\\0.88_WMJVs狼牙_BO2_2_3.jpg": "yes",
+    "robomaster_North China Regional Competition\\DroneDetection\\Confirmed\\0.88_TDTVsI Hiter_BO5_3_174.jpg": "yes",
+    "robomaster_North China Regional Competition\\DroneDetection\\Confirmed\\0.88_TDTVsI Hiter_BO5_3_172.jpg": "bad",
+    "robomaster_Central China Regional Competition\\AntiUAV\\Confirmed\\0.25_交龙VsCUBOT_BO2_1_132.jpg": "bad",
+    "robomaster_Central China Regional Competition\\AntiUAV\\Confirmed\\0.25_WMJVs狼牙_BO2_2_333.jpg": "bad"
+  },
+  "stats": {
+    "confirmed": 9,
+    "rejected": 0,
+    "bad_detection": 4,
+    "total": 13
+  }
+}

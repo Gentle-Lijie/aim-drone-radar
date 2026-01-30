@@ -64,3 +64,6 @@ nul
 # Results
 inference_results/**/*.jpg
 inference_results/**/*.png
+inference_results/**/*.zip
+
+yolov5/
